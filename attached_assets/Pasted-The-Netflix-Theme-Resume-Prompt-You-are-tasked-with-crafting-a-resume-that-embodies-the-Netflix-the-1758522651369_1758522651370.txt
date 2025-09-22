@@ -1,0 +1,96 @@
+The Netflix Theme Resume Prompt
+You are tasked with crafting a resume that embodies the "Netflix theme" by presenting the candidate's professional life as a compelling narrative. This is not a traditional list of duties, but a story of high-stakes challenges, unexpected twists, and a morally gray protagonist who achieves extraordinary outcomes.
+
+Your resume development should be guided by the following principles:
+
+Mood: The Unsettled Urgency. The mood of the resume should feel like a season of a Netflix show—every bullet point is a scene, and every job is a season. It creates a sense of quiet tension and high-stakes urgency. Instead of stating, "Managed a team," you should hint at the emotional and professional challenges involved: "Navigated a team through a hostile corporate merger, securing key talent and ensuring project continuity despite departmental layoffs." The language should be active and create a sense of impending action.
+
+Action: The Slow Burn of Impact. Your resume should not be a list of tasks but a chronicle of deliberate, high-impact actions. Frame your accomplishments as major plot points. Don't just list a project; describe the initial problem, the unexpected obstacles, and the surprising resolution. For example, instead of "Increased sales by 15%," tell the story: "Inherited a failing sales pipeline; implemented a controversial but data-driven strategy that reversed the decline and ultimately grew revenue by 15% in a single quarter." The action is messy, deliberate, and has clear consequences.
+
+Behavior: The Morally Gray Professional. This is the most crucial part. Your resume character isn't perfect. They made tough calls, took risks, and solved problems in unorthodox ways. Acknowledge and reframe professional "failures" as learning moments or as a consequence of a morally complex decision. Your narrative should show a person who is not afraid to challenge the status quo and is more interested in the truth of their professional journey than a sanitized version. Acknowledge a project that failed but then show what you did to mitigate the damage. This makes the character more relatable and authentic, just like a protagonist you'd see on screen.
+
+Your Task: Using a real or fictional professional, create a resume for a single job or a series of jobs that captures this tone. Focus on crafting a compelling Summary or Objective that sets the stage, followed by Experience bullet points that read like episodic plot summaries. Your goal is to make the hiring manager feel like they are "binge-watching" your career, eager to see what happens next.
+
+CHANDAR RATHALA
++1 (813) 418-9804 — chandarrathala7@gmail.com — linkedin.com/in/chandar-rathala —
+github.com/chandarr7
+SUMMARY
+Data Analyst with 4+ years’ experience across healthcare, finance, and climate-security. Expert in SQL, Python, BI,
+and cloud warehousing. Proven impact: reduced infra costs by 40%, cut reporting cycles from 5 days to 2, optimized
+ETL pipelines by 55%. Adept at KPI design, experiment design, stakeholder communication, and building reliable,
+scalable data products that improve decisions and outcomes.
+EDUCATION
+University of South Florida, Tampa, FL Masters – Masters in Artificial Intelligence & Business Analytics — CGPA: 3.9/4
+Jawaharlal Nehru Technological University, Hyderabad, India Bachelor of Technology – Computer Science — CGPA: 3.7/4
+CORE SKILLS
+Aug 2024 – Present
+Aug 2017 – May 2021
+• Languages & Databases: Python •SQL •R •Java •PostgreSQL •MySQL •SQL Server •BigQuery •Advanced
+Excel
+• BI & Visualization: Power BI (DAX, M Query)• Tableau • Looker • AWS QuickSight
+• Data Management: ETL • Data Profiling • Data Mapping • Data Quality Monitoring • Data Storytelling
+• Statistical Methods: A/B Testing• Regression • Classification • Time Series Forecasting • Model Validation
+(ROC-AUC, PR curves)
+• Cloud & Big Data: AWS Redshift (migrations, perf tuning)• Google Cloud • Azure • Hadoop • Spark
+• Collaboration & Tools: Jira • Confluence • GitHub • Bitbucket • Microsoft PowerPoint • Visio
+• Soft Skills: Cross-functional collaboration • Stakeholder communication • Change management • Project facilita-
+tion
+EXPERIENCE
+Research Assistant / Teaching Assistant USF (Advisor: Prof. Dr. Lyn Dinh) Aug 2024 – Present
+• Built climate–conflict risk models (U.S. Army project) using regression and time-series; achieved 87% precision and
+ROC-AUC of 0.91, enabling risk forecasts adopted in 2 policy briefs.
+• Designed visual frameworks that influenced climate adaptation strategies across 3 regions.
+• Mentored 20+ undergraduates in SQL, Python, and BI; course evaluation ratings improved 30%.
+Research Assistant — Healthcare Data Project USF (Advisor: Prof. Dr. Ehsan Sheybani) Aug 2024 – Aug
+2025
+• Engineered ETL pipelines for 10M+ record clinical files; cut processing time 45% and enabled daily refreshes (vs.
+weekly).
+• Designed Python/SQL pipelines with validation checks that reduced data errors by 28% and ensured HIPAA com-
+pliance.
+• Applied ML for anomaly detection and predictive analytics; model achieved F1-score 0.86, improving early patient
+risk flagging and reducing readmissions by 10%.
+Analyst II, Software Engineering DXC Technology, India Feb 2022 – Jul 2024
+• Migrated 600+ SAS programs & 1000+ datasets into AWS Redshift; reduced infra costs by 40% ($2.5M annually),
+improved reliability 30%.
+• Optimized SQL/ETL workflows; runtime reduced from 8h→3.5h; data error rate fell 25%, boosting SLA adherence
+by 20%.
+• Led A/B test framework for dashboard rollout; +15% executive adoption, enabling quarterly reports 3 days earlier
+and informing $50M budget allocation.
+• Built Power BI dashboards (DAX/MDX) used by 200+ staff; cut manual reporting hours by 35%, improved decision
+confidence by 25%.
+• Standardized KPIs across 5 business units, eliminating conflicting metrics and driving unified reporting for senior
+leadership.
+ADDITIONAL EXPERIENCE
+Data Analyst Intern (Virtual Experience) KPMG International Limited, via Forage • Completed simulations in SQL optimization, Snowflake migrations, and Tableau dashboards.
+• Delivered insights in case scenarios, improving engagement metrics by 20%.
+Data Analyst Intern (Virtual Experience) Standard Bank, via Forage • Analyzed financial datasets with Python to automate reporting.
+• Produced governance-compliant dashboards emphasizing accuracy and compliance.
+PROJECTS
+Dec 2021 – Feb 2022
+Aug 2021 – Nov 2021
+Business 360: E-commerce Sales Analytics University Project (2025)
+Project Link
+• Built Power BI dashboards integrating SQL/Excel data for product and customer segmentation.
+• Applied DAX/M Query for advanced calculations and forecasting; enabled pricing and growth strategy shifts.
+HR Analysis Dashboard University Project (2024)
+Project Link
+• Designed Power BI dashboards to forecast attrition and track workforce metrics.
+• Cleaned HR data pipelines, improving reporting accuracy and reducing refresh latency 35%.
+USF Parking Tracker University Project (2024)
+Project Link
+• Architected PostgreSQL schema & analytics pipelines; implemented React.js + Node.js/Express app deployed on
+Azure.
+• Integrated geospatial maps (Leaflet) for real-time availability; built usage analytics for ops optimization.
+Blockchain E-Voting System Academic Project (2021) — Built a secure Python/Django prototype enabling
+transparent, tamper-resistant ballot simulation.
+Facial Recognition with AI Academic Project (2022) — Developed biometric model achieving >90% accuracy on
+limited dataset.
+CERTIFICATIONS
+• Stanford Online: Machine Learning (Mar 2025)
+• DeepLearning.AI Deep Learning Specialization (Aug
+2023)
+• Advanced SQL for Data Scientist (Jan 2023)
+• SQL for Data Science Certificate (Jan 2022)
+• IBM Data Science Professional Certificate (Nov 2021)
+• MySQL Database Mastery (Oct 2021)
+• Python from Basic to Advanced (Sept 2021)
