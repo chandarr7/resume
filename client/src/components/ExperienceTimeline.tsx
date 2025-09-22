@@ -85,6 +85,49 @@ export default function ExperienceTimeline() {
     }
   ]
 
+  const additionalExperiences = [
+    {
+      id: 'kpmg',
+      title: 'Data Analyst Intern (Virtual Experience)',
+      company: 'KPMG International Limited · Forage Simulation',
+      period: 'Dec 2021 – Feb 2022',
+      beats: [
+        {
+          label: 'Conflict',
+          text: 'Audit rehearsal exposed clashing revenue metrics across siloed exports, threatening to derail the executive review.'
+        },
+        {
+          label: 'Bold Move',
+          text: 'Volunteered to rebuild the Snowflake staging model overnight, wiring SQL stress tests and Tableau storyboards to interrogate every assumption.'
+        },
+        {
+          label: 'Resolution/Twist',
+          text: 'The revamped storyline boosted stakeholder engagement 20% and the "intern" QA playbook became the new onboarding artifact.'
+        }
+      ]
+    },
+    {
+      id: 'standard-bank',
+      title: 'Data Analyst Intern (Virtual Experience)',
+      company: 'Standard Bank · Forage Simulation',
+      period: 'Aug 2021 – Nov 2021',
+      beats: [
+        {
+          label: 'Conflict',
+          text: 'Regulators demanded audit-ready financial dashboards while manual reporting queues piled up.'
+        },
+        {
+          label: 'Bold Move',
+          text: 'Scripted Python automations to reconcile ledgers and built compliance-first Tableau scenes that surfaced anomalies before the reviewers did.'
+        },
+        {
+          label: 'Resolution/Twist',
+          text: 'Cycle times collapsed, governance checks passed without edits, and the bank reused the dashboards as its go-to control evidence.'
+        }
+      ]
+    }
+  ]
+
   const selectExperience = (id: string) => {
     console.log(`Selecting experience: ${id}`) //todo: remove mock functionality
     setSelectedExperience(id)
@@ -102,8 +145,8 @@ export default function ExperienceTimeline() {
             THE CAREER <span className="text-primary">EPISODES</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Each role a season, every project an episode. 
-            This is the story of a data analyst who doesn't just process numbers—he transforms organizations.
+            Each role a season, every project an episode.
+            Every cliffhanger begs the question: what arsenal keeps the protagonist ready for the next act?
           </p>
         </div>
 
@@ -146,7 +189,7 @@ export default function ExperienceTimeline() {
                     <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
                       {exp.title}
                     </h3>
-                    
+
                     <div className="flex flex-wrap items-center gap-4 mb-4 text-muted-foreground">
                       <span className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
@@ -214,7 +257,7 @@ export default function ExperienceTimeline() {
                       </div>
                     </div>
 
-                    <Button 
+                    <Button
                       className="w-full"
                       onClick={() => viewProject(exp.company)}
                       data-testid={`button-view-project-${exp.id}`}
@@ -228,6 +271,41 @@ export default function ExperienceTimeline() {
             </motion.div>
           )
         ))}
+
+        <div className="mt-16">
+          <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <h3 className="text-2xl font-bold text-foreground">SIDE QUESTS: ADDITIONAL EXPERIENCE</h3>
+            <Badge variant="outline" className="uppercase tracking-wide text-xs">Mid-season Interlude</Badge>
+          </div>
+          <p className="text-muted-foreground max-w-3xl mb-8">
+            Between major arcs, these short missions kept the tension high and sharpened the instincts you’ll see unleashed in the skills reel next.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {additionalExperiences.map((extra) => (
+              <Card key={extra.id} className="bg-card border-card-border hover-elevate transition-all duration-300">
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">{extra.title}</h4>
+                    <div className="text-sm text-muted-foreground">{extra.company}</div>
+                    <div className="text-xs text-muted-foreground/70 uppercase tracking-widest">
+                      {extra.period}
+                    </div>
+                  </div>
+                  <ul className="space-y-3">
+                    {extra.beats.map((beat) => (
+                      <li key={beat.label} className="flex items-start gap-3">
+                        <Badge variant="secondary" className="text-[10px] uppercase tracking-wide mt-1">
+                          {beat.label}
+                        </Badge>
+                        <span className="text-foreground/80 text-sm leading-relaxed">{beat.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

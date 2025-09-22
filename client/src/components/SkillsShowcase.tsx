@@ -95,6 +95,19 @@ export default function SkillsShowcase() {
     }
   ]
 
+  const certificationMontage = {
+    hook: "Sharpened the protagonist's toolkit during a frantic upskilling montage—Stanford's Machine Learning, DeepLearning.AI's Deep Learning Specialization, IBM's Data Science program, plus advanced SQL, MySQL, and Python credentials forged between 2021 and 2025.",
+    badges: [
+      'Stanford Online · Machine Learning (Mar 2025)',
+      'DeepLearning.AI · Deep Learning Specialization (Aug 2023)',
+      'IBM Data Science Professional Certificate (Nov 2021)',
+      'Advanced SQL for Data Scientists (Jan 2023)',
+      'SQL for Data Science Certificate (Jan 2022)',
+      'MySQL Database Mastery (Oct 2021)',
+      'Python from Basic to Advanced (Sep 2021)'
+    ]
+  }
+
   const categories = [
     { id: 'all', name: 'All Skills' },
     { id: 'technical', name: 'Technical Mastery' },
@@ -118,8 +131,7 @@ export default function SkillsShowcase() {
             CHARACTER <span className="text-primary">ABILITIES</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every great protagonist has a unique set of skills. 
-            Here's what makes Chandar a formidable force in the data universe.
+            The mid-season recap: after each career cliffhanger, this is the gear reloaded before the next mission—linger here, because the upcoming projects section drops you straight into the heists these abilities pulled off.
           </p>
         </div>
 
@@ -219,6 +231,27 @@ export default function SkillsShowcase() {
                 <div className="text-sm text-muted-foreground">Model Precision</div>
               </div>
             </div>
+          </Card>
+        </div>
+
+        <div className="mt-16">
+          <Card className="bg-card border-card-border hover-elevate transition-all duration-300">
+            <CardContent className="p-6 space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h3 className="text-xl font-semibold text-foreground">Training Montage</h3>
+                <Badge variant="outline" className="uppercase tracking-wide text-xs">Certifications</Badge>
+              </div>
+              <p className="text-foreground/80 leading-relaxed">
+                {certificationMontage.hook} Consider it the teaser reel before the project capers.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {certificationMontage.badges.map((cert) => (
+                  <Badge key={cert} variant="secondary" className="text-xs">
+                    {cert}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
           </Card>
         </div>
       </div>

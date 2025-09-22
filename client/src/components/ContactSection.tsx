@@ -99,7 +99,7 @@ export default function ContactSection() {
             LET'S <span className="text-primary">COLLABORATE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to write the next chapter? Let's discuss how we can transform your data challenges into strategic advantages.
+            Post-credit scene unlocked: choose the next mission and we'll weaponize your data arc before the credits stop rolling.
           </p>
         </div>
 
@@ -110,8 +110,8 @@ export default function ContactSection() {
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground">Get In Touch</CardTitle>
                 <p className="text-muted-foreground">
-                  Whether you're looking for a data analyst, researcher, or technical consultant, 
-                  I'm always interested in discussing new opportunities and challenges.
+                  Whether you're looking for a data analyst, researcher, or technical consultant,
+                  drop the mission details and we'll map the sequel together.
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -174,7 +174,7 @@ export default function ContactSection() {
             <CardHeader>
               <CardTitle className="text-2xl text-foreground">Send a Message</CardTitle>
               <p className="text-muted-foreground">
-                Have a project in mind? Let's discuss how we can work together.
+                Have a project in mind? Set the scene here and we'll storyboard the response in record time.
               </p>
             </CardHeader>
             <CardContent>

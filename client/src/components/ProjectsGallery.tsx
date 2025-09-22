@@ -36,14 +36,14 @@ export default function ProjectsGallery() {
       id: 'business360',
       title: 'Business 360: E-commerce Analytics',
       category: 'analytics',
-      description: 'A comprehensive Power BI dashboard integrating multi-source data for complete business intelligence.',
-      longDescription: 'Built an enterprise-grade analytics platform that transformed how stakeholders view business performance. The dashboard integrates data from multiple sources, providing real-time insights into customer behavior, product performance, and growth opportunities.',
+      description: 'Revenue and customer signals were contradicting each other; rewired the chaos into a Power BI universe that exposed growth levers.',
+      longDescription: 'When leadership faced dueling reports across marketing, finance, and supply chain, I treated the mission like a data heist—mapping every source, scripting M Query scrubs, and layering DAX what-if models until the truth surfaced. The dashboard became the suspense-resolving control center for every pricing and retention decision.',
       image: dashboardImage,
       technologies: ['Power BI', 'SQL', 'DAX', 'M Query', 'Excel'],
       achievements: [
-        'Integrated multiple data sources for unified reporting',
-        'Enabled real-time customer and product segmentation',
-        'Delivered actionable insights for pricing strategy'
+        'Conflict — Six disconnected revenue silos stalled pricing calls and eroded trust in the analytics team.',
+        'Bold Move — Orchestrated a Power BI rebuild that stitched SQL warehouses and Excel exports together, automating sanity checks with DAX and M Query.',
+        'Resolution/Twist — Reporting sped up 3×, uncovered a hidden high-margin cohort, and reframed the growth strategy overnight.'
       ],
       metrics: ['3x Faster Reporting', '95% Data Accuracy', '200+ Daily Users'],
       year: '2025',
@@ -55,14 +55,14 @@ export default function ProjectsGallery() {
       id: 'healthcare',
       title: 'Healthcare Data Revolution',
       category: 'healthcare',
-      description: 'ML-powered patient risk detection system processing 10M+ clinical records with HIPAA compliance.',
-      longDescription: 'Engineered a sophisticated healthcare data pipeline that revolutionized patient care through predictive analytics. The system processes massive clinical datasets while maintaining strict HIPAA compliance and providing real-time risk assessments.',
+      description: 'Hospitals were stuck with sluggish weekly refreshes; engineered a compliance-tight pipeline that pushed life-saving insights daily.',
+      longDescription: 'Ten million patient records were trapped inside brittle ETL scripts, forcing care teams to wait a week for updates. I rebuilt the pipeline with modular Python and SQL stages, inserted HIPAA-safe validation gates, and layered ML models for early risk detection. The backlog became the heartbeat of clinical decision-making.',
       image: healthcareImage,
       technologies: ['Python', 'SQL', 'Machine Learning', 'HIPAA', 'ETL'],
       achievements: [
-        'Processed 10M+ patient records with zero compliance issues',
-        'Reduced data processing time by 45%',
-        'Achieved 86% F1-score for risk prediction'
+        'Conflict — Legacy jobs choked on 10M+ clinical records, leaving bedside teams blind between weekly refreshes.',
+        'Bold Move — Reengineered the ETL stack with Python, SQL, and automated QA traps while embedding HIPAA guardrails and ML anomaly scans.',
+        'Resolution/Twist — Processing time fell 45%, the model reached 0.86 F1, and early-warning dashboards cut readmissions by 10%.'
       ],
       metrics: ['10M+ Records', '45% Faster Processing', '10% Readmission Reduction'],
       year: '2024-2025',
@@ -74,14 +74,14 @@ export default function ProjectsGallery() {
       id: 'climate',
       title: 'Climate-Conflict Risk Models',
       category: 'research',
-      description: 'Advanced ML models predicting climate-security risks for U.S. Army policy development.',
-      longDescription: 'Developed cutting-edge machine learning models that analyze the intersection of climate change and global security. The models achieved exceptional accuracy and are now being used to inform military strategy and policy decisions.',
+      description: 'Policy leaders lacked credible climate-conflict forecasts; built models that turned atmospheric chaos into actionable alerts.',
+      longDescription: 'The Army research unit needed proof that climate volatility mapped to security flashpoints, yet their spreadsheets read like disconnected episodes. I fused time-series weather data, geospatial intelligence, and socio-political signals into machine learning pipelines, pressure-testing every feature until the predictions held up in the war room.',
       image: climateImage,
       technologies: ['Python', 'Machine Learning', 'Time Series', 'GIS', 'Policy Analysis'],
       achievements: [
-        'Achieved 87% precision with 0.91 ROC-AUC',
-        'Models adopted in 2 official policy briefs',
-        'Influenced climate strategies across 3 regions'
+        'Conflict — Defense strategists were navigating climate threats with guesswork and outdated spreadsheets.',
+        'Bold Move — Engineered machine learning pipelines blending satellite data, conflict registries, and temporal trends with rigorous validation.',
+        'Resolution/Twist — Achieved 87% precision and 0.91 ROC-AUC, landing in two policy briefs that redirected climate-security strategy across three regions.'
       ],
       metrics: ['87% Precision', '0.91 ROC-AUC', '2 Policy Briefs'],
       year: '2024',
@@ -93,14 +93,14 @@ export default function ProjectsGallery() {
       id: 'parking',
       title: 'USF Smart Parking System',
       category: 'fullstack',
-      description: 'Real-time parking availability system with geospatial mapping and usage analytics.',
-      longDescription: 'Architected a full-stack application solving a real campus problem. The system provides real-time parking availability, helping thousands of students and staff save time while optimizing campus resource utilization.',
+      description: 'Campus drivers circled for ages without intel; deployed a real-time parking tracker that turned chaos into guided arrivals.',
+      longDescription: 'USF commuters were burning time hunting for spots while operations lacked usage analytics. Our team built a full-stack solution—React front end, Node/Express APIs, PostgreSQL backbone, and Leaflet maps—to stream availability in real time and log every decision point for operations.',
       image: dashboardImage,
       technologies: ['React.js', 'Node.js', 'PostgreSQL', 'Leaflet', 'Azure'],
       achievements: [
-        'Real-time availability tracking across campus',
-        'Integrated geospatial mapping with Leaflet',
-        'Built comprehensive usage analytics'
+        'Conflict — Morning gridlock and zero visibility into parking inventory drained productivity across campus.',
+        'Bold Move — Architected a full-stack system with sensor integrations, PostgreSQL telemetry, and Leaflet-powered geospatial storytelling.',
+        'Resolution/Twist — Delivered real-time availability with 100% uptime, generated usage analytics that informed new routing plans, and won executive sponsorship for expansion.'
       ],
       metrics: ['Real-time Updates', '100% Uptime', 'Campus-wide Coverage'],
       year: '2024',
@@ -154,7 +154,7 @@ export default function ProjectsGallery() {
             FEATURED <span className="text-primary">PROJECTS</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Like movie posters in a Netflix catalog, each project tells a unique story of innovation, challenge, and success.
+            Each case file opens on a crisis, escalates with a bold experiment, and lands on a twist that kept stakeholders binge-watching. Stick around for the post-credit scene where we script the sequel together.
           </p>
         </div>
 
