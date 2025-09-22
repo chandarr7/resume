@@ -38,6 +38,7 @@ export default function ExperienceTimeline() {
       description: 'The unexpected pivot: from industry veteran to academic researcher. Building climate-conflict risk models while mentoring the next generation.',
       achievements: [
         'Built climate–conflict risk models achieving 87% precision',
+        'Greenlit an ambitious feature-engineering sprint that briefly tanked precision to 72%; paused the rollout, installed automated cross-validation, and recovered performance within two weeks',
         'ROC-AUC of 0.91 enabling risk forecasts for policy briefs',
         'Mentored 20+ undergraduates, improved course ratings by 30%'
       ],
@@ -57,6 +58,7 @@ export default function ExperienceTimeline() {
       achievements: [
         'Migrated 600+ SAS programs to AWS Redshift',
         'Reduced infrastructure costs by 40% ($2.5M annually)',
+        'Approved an aggressive cutover weekend that spiked latency by 18%; executed contingency rollback, introduced canary deploys, and regained stakeholder trust to finish on schedule',
         'Led A/B test framework increasing executive adoption by 15%'
       ],
       metrics: ['$2.5M Saved', '40% Cost Reduction', '15% Adoption Increase'],
@@ -75,6 +77,7 @@ export default function ExperienceTimeline() {
       achievements: [
         'Engineered ETL pipelines for 10M+ clinical records',
         'Cut processing time by 45%, enabled daily vs weekly refreshes',
+        'Agreed to compress HIPAA compliance reviews to meet go-live, caught a late-stage audit gap, and built automated access logging to pass scrutiny without slipping launch',
         'Applied ML for early patient risk detection'
       ],
       metrics: ['10M+ Records', '45% Faster Processing', '10% Readmission Reduction'],
