@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -21,6 +22,8 @@ interface Experience {
 
 export default function ExperienceTimeline() {
   const [selectedExperience, setSelectedExperience] = useState<string>('current')
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   // todo: remove mock functionality
   const experiences: Experience[] = [
@@ -89,7 +92,7 @@ export default function ExperienceTimeline() {
   }
 
   return (
-    <section id="experience" className="py-24 bg-background">
+    <section ref={ref} id="experience" className="py-24 bg-background">
       <div className="container mx-auto px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -119,7 +122,13 @@ export default function ExperienceTimeline() {
         {/* Selected Experience Details */}
         {experiences.map((exp) => (
           selectedExperience === exp.id && (
-            <Card key={exp.id} className="bg-card border-card-border hover-elevate transition-all duration-300">
+            <motion.div
+              key={exp.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="bg-card border-card-border hover-elevate transition-all duration-300">
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   {/* Main Content */}
@@ -212,7 +221,8 @@ export default function ExperienceTimeline() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </motion.div>
           )
         ))}
       </div>

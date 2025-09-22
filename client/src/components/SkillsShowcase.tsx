@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
@@ -17,6 +18,8 @@ interface Skill {
 
 export default function SkillsShowcase() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   // todo: remove mock functionality
   const skills: Skill[] = [
@@ -108,7 +111,7 @@ export default function SkillsShowcase() {
   }
 
   return (
-    <section className="py-24 bg-card/30">
+    <section ref={ref} id="skills" className="py-24 bg-card/30">
       <div className="container mx-auto px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -140,10 +143,16 @@ export default function SkillsShowcase() {
 
         {/* Skills Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill) => {
+          {filteredSkills.map((skill, index) => {
             const IconComponent = skill.icon
             return (
-              <Card key={skill.id} className="bg-card border-card-border hover-elevate transition-all duration-300">
+              <motion.div
+                key={skill.id}
+                initial={{ opacity: 0, y: 50 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="bg-card border-card-border hover-elevate transition-all duration-300">
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 bg-primary/20 rounded-md flex items-center justify-center">
@@ -183,7 +192,8 @@ export default function SkillsShowcase() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+                </Card>
+              </motion.div>
             )
           })}
         </div>

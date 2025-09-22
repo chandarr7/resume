@@ -1,0 +1,170 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2500
+>>
+stream
+BT
+/F1 24 Tf
+50 750 Td
+(CHANDAR RATHALA) Tj
+0 -30 Td
+/F1 12 Tf
+(Senior Data Analyst | Tampa, FL) Tj
+0 -20 Td
+(+1 (813) 418-9804 | chandarrathala7@gmail.com) Tj
+0 -20 Td
+(linkedin.com/in/chandar-rathala | github.com/chandarr7) Tj
+
+0 -40 Td
+/F1 16 Tf
+(SUMMARY) Tj
+0 -20 Td
+/F1 10 Tf
+(Data Analyst with 4+ years' experience across healthcare, finance, and climate-security.) Tj
+0 -12 Td
+(Expert in SQL, Python, BI, and cloud warehousing. Proven impact: reduced infra costs by 40%,) Tj
+0 -12 Td
+(cut reporting cycles from 5 days to 2, optimized ETL pipelines by 55%. Adept at KPI design,) Tj
+0 -12 Td
+(experiment design, stakeholder communication, and building reliable, scalable data products.) Tj
+
+0 -30 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 12 Tf
+(University of South Florida, Tampa, FL) Tj
+0 -12 Td
+/F1 10 Tf
+(Masters in Artificial Intelligence & Business Analytics | CGPA: 3.9/4 | Aug 2024 – Present) Tj
+0 -15 Td
+/F1 12 Tf
+(Jawaharlal Nehru Technological University, Hyderabad, India) Tj
+0 -12 Td
+/F1 10 Tf
+(Bachelor of Technology – Computer Science | CGPA: 3.7/4 | Aug 2017 – May 2021) Tj
+
+0 -30 Td
+/F1 16 Tf
+(CORE SKILLS) Tj
+0 -20 Td
+/F1 10 Tf
+(Languages & Databases: Python, SQL, R, Java, PostgreSQL, MySQL, SQL Server, BigQuery) Tj
+0 -12 Td
+(BI & Visualization: Power BI (DAX, M Query), Tableau, Looker, AWS QuickSight) Tj
+0 -12 Td
+(Data Management: ETL, Data Profiling, Data Mapping, Data Quality Monitoring) Tj
+0 -12 Td
+(Statistical Methods: A/B Testing, Regression, Classification, Time Series Forecasting) Tj
+0 -12 Td
+(Cloud & Big Data: AWS Redshift, Google Cloud, Azure, Hadoop, Spark) Tj
+
+0 -30 Td
+/F1 16 Tf
+(EXPERIENCE) Tj
+0 -20 Td
+/F1 12 Tf
+(Research Assistant / Teaching Assistant | USF | Aug 2024 – Present) Tj
+0 -12 Td
+/F1 10 Tf
+(• Built climate–conflict risk models achieving 87% precision and ROC-AUC of 0.91) Tj
+0 -12 Td
+(• Designed visual frameworks influencing climate adaptation strategies across 3 regions) Tj
+0 -12 Td
+(• Mentored 20+ undergraduates in SQL, Python, and BI; improved course ratings by 30%) Tj
+
+0 -20 Td
+/F1 12 Tf
+(Analyst II, Software Engineering | DXC Technology | Feb 2022 – Jul 2024) Tj
+0 -12 Td
+/F1 10 Tf
+(• Migrated 600+ SAS programs to AWS Redshift; reduced infra costs by 40% ($2.5M annually)) Tj
+0 -12 Td
+(• Optimized SQL/ETL workflows; runtime reduced from 8h→3.5h; data error rate fell 25%) Tj
+0 -12 Td
+(• Led A/B test framework for dashboard rollout; +15% executive adoption) Tj
+0 -12 Td
+(• Built Power BI dashboards used by 200+ staff; cut manual reporting hours by 35%) Tj
+
+0 -30 Td
+/F1 16 Tf
+(PROJECTS) Tj
+0 -20 Td
+/F1 12 Tf
+(Business 360: E-commerce Sales Analytics | 2025) Tj
+0 -12 Td
+/F1 10 Tf
+(Built Power BI dashboards integrating SQL/Excel data for product and customer segmentation) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Healthcare Data Revolution | 2024-2025) Tj
+0 -12 Td
+/F1 10 Tf
+(Engineered ETL pipelines for 10M+ clinical records with HIPAA compliance) Tj
+
+0 -15 Td
+/F1 12 Tf
+(Climate-Conflict Risk Models | 2024) Tj
+0 -12 Td
+/F1 10 Tf
+(Advanced ML models for U.S. Army policy development with 87% precision) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000284 00000 n 
+0000002838 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+2921
+%%EOF

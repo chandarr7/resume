@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
+import { useToast } from '@/hooks/use-toast'
 import { Mail, Phone, MapPin, Calendar, Clock, Send } from 'lucide-react'
 
 export default function ContactSection() {
@@ -13,6 +14,8 @@ export default function ContactSection() {
     company: '',
     message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const { toast } = useToast()
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,11 +24,44 @@ export default function ContactSection() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Sending message:', formData) //todo: remove mock functionality
-    // Reset form
-    setFormData({ name: '', email: '', company: '', message: '' })
+    setIsSubmitting(true)
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+      
+      const result = await response.json()
+      
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: result.message,
+        })
+        // Reset form
+        setFormData({ name: '', email: '', company: '', message: '' })
+      } else {
+        toast({
+          title: "Error sending message",
+          description: result.message,
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -203,11 +239,12 @@ export default function ContactSection() {
 
                 <Button 
                   type="submit" 
+                  disabled={isSubmitting}
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                   data-testid="button-send-message"
                 >
                   <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>

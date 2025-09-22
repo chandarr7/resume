@@ -23,11 +23,26 @@ export default function NetflixNavigation() {
   }
 
   const downloadResume = () => {
-    console.log('Downloading resume') //todo: remove mock functionality
+    // Create a download link for the PDF resume
+    const link = document.createElement('a')
+    link.href = '/Chandar_Rathala_Resume.pdf'
+    link.download = 'Chandar_Rathala_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   const contactAction = (platform: string) => {
-    console.log(`Contacting via ${platform}`) //todo: remove mock functionality
+    const contactLinks: Record<string, string> = {
+      email: 'mailto:chandarrathala7@gmail.com',
+      linkedin: 'https://linkedin.com/in/chandar-rathala',
+      github: 'https://github.com/chandarr7'
+    }
+    
+    const link = contactLinks[platform]
+    if (link) {
+      window.open(link, '_blank')
+    }
   }
 
   const navItems = [

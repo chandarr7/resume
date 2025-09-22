@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -26,6 +27,8 @@ interface Project {
 
 export default function ProjectsGallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   // todo: remove mock functionality
   const projects: Project[] = [
@@ -124,15 +127,27 @@ export default function ProjectsGallery() {
   }
 
   const openProject = (projectId: string) => {
-    console.log(`Opening project: ${projectId}`) //todo: remove mock functionality
+    // Open project links based on project ID
+    const projectLinks: Record<string, string> = {
+      'business360': 'https://github.com/chandarr7/business-360-analytics',
+      'healthcare': 'https://github.com/chandarr7/healthcare-data-pipeline',
+      'climate': 'https://github.com/chandarr7/climate-risk-models',
+      'parking': 'https://github.com/chandarr7/usf-parking-tracker'
+    }
+    
+    const link = projectLinks[projectId]
+    if (link) {
+      window.open(link, '_blank')
+    }
   }
 
   const viewCode = (projectId: string) => {
-    console.log(`Viewing code for project: ${projectId}`) //todo: remove mock functionality
+    // Same as openProject for now - GitHub links
+    openProject(projectId)
   }
 
   return (
-    <section className="py-24 bg-background">
+    <section ref={ref} id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
@@ -163,8 +178,14 @@ export default function ProjectsGallery() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
-            <Card key={project.id} className="bg-card border-card-border hover-elevate transition-all duration-300 overflow-hidden group">
+          {filteredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+            >
+              <Card className="bg-card border-card-border hover-elevate transition-all duration-300 overflow-hidden group">
               {/* Project Image */}
               <div className="relative aspect-video overflow-hidden">
                 <img 
@@ -306,7 +327,8 @@ export default function ProjectsGallery() {
                   )}
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
